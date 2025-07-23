@@ -1,0 +1,113 @@
+table {
+  border-collapse: collapse;
+  margin: 50px auto;
+}
+
+td {
+  width: 150px;
+  height: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  color: #333;
+}
+
+#alegria {
+    border-style: solid;
+    background-color: #f5e025; 
+    border: 25px solid;
+    border-bottom: 20px solid;
+    border-right: 15px solid;
+    border-color: #fbc02d;
+    padding: 20px;
+    margin: 20px;
+}
+
+#sorpresa {
+    border-style: solid;
+    background-color: #ee82ee; 
+    border: 35px solid;
+    border-bottom: 10px solid;
+    border-right: 10px solid;
+    border-color: #a178cf;
+    padding: 10px;
+    margin: 20px;
+}
+
+ #tristeza {
+    border-style: dotted;
+    background-color: #4f8ee0; 
+    border: 20px dotted;
+    border-bottom: 10px dotted;
+    border-right: 10px dotted;
+    border-color: #07119e; 
+    padding: 30px;
+    margin: 10px;
+}
+
+#miedo {
+    border-style: dotted;
+    background-color: #ae65ca;
+    border: 20px dotted;
+    border-bottom: 15px dotted;
+    border-right: 10px dotted;
+    border-color: #3a0346;
+    padding: 20px;
+    margin: 20px;
+}
+
+#ira {
+    border-style: dotted;
+    background-color: #e41212;
+    border: 30px dotted;
+    border-bottom: 15px dotted;
+    border-right: 10px dotted;
+    border-color: #700000;
+    padding: 25px;
+    margin: 30px;
+}
+
+#calma {
+    border-style: solid;
+    background-color: #a9f085;
+    border: 20px solid;
+    border-bottom: 15px solid;
+    border-right: 10px solid;
+    border-color: #388e3c;
+    padding: 10px;
+    margin: 10px;
+}
+
+#amor {
+    border-style: solid;
+    background-color: #f56eb8;
+    border: 40px solid;
+    border-bottom: 35px solid;
+    border-right: 30px solid;
+    border-color: #d436a0;
+    padding: 30px;
+    margin: 40px;
+}
+
+#ansiedad {
+    border-style: dotted;
+    background-color: #e76711;
+    border: 20px dotted;
+    border-bottom: 15px dotted;
+    border-right: 10px dotted;
+    border-color: #61340a;
+    padding: 10px;
+    margin: 15px;
+}
+
+#asco {
+    border-style: dotted;
+    background-color: #074114; 
+    border: px dotted;
+    border-bottom: 20px dotted;
+    border-right: 10px dotted;
+    border-color: #001f0e;
+    padding: 5px;
+    margin: 10px;
+}
