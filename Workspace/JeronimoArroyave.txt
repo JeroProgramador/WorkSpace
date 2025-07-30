@@ -1,0 +1,266 @@
+Jerónimo Arroyave Ramos
+
+https://github.com/criteto02/DGMate.git
+De esta página podriamos sacar los botones de registro e inicio de sesión, ya que combina perfectamente con el diseño de nuestra página
+
+https://github.com/eccubidesg/operaciones.git
+De esta página me agrado mucho el diseño y la división de cada modulo, por lo que seria indicado para separar los juegos de nuestro proyecto
+
+https://github.com/DerekAlfaro/Juego-para-ni-os.git
+Fue la página que más me gusto, me agrado el diseño y como tiene juegos dirigidos especialmente para niños, por lo que seria muy fundamental inspirarnos en esta página.
+
+
+30/04/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+¿Qué es HTTP?
+R/ HTTP (Protocolo de Transferencia de Hipertexto) es un protocolo de comunicación sin estado utilizado para transferir datos en la web, principalmente entre un cliente (navegador) y un servidor, basado en solicitudes (request) y respuestas (response).
+
+¿Qué hace el usuario cuando se loguea?
+Qué es lo que pasa del lado del usuario
+R/ El usuario ingresa credenciales (como nombre de usuario y contraseña) en un formulario web. El cliente (navegador) envía una solicitud HTTP (generalmente POST) con estos datos al servidor.
+Del lado del usuario, se genera una interfaz para introducir la información y se espera la respuesta del servidor para confirmar el acceso o mostrar un error.
+
+¿Qué hace el servidor cuando un usuario se loguea?
+Qué es lo que pasa del lado del servidor
+R/ El servidor recibe la solicitud HTTP, verifica las credenciales contra una base de datos, y autentica al usuario.
+Si es exitoso, genera una sesión (usando cookies o tokens, como JWT) y envía una respuesta HTTP al cliente confirmando el acceso. Si falla, devuelve un mensaje de error.
+
+
+07/05/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Elementos del diagrama entidad relación
+R/ Entidad: Representa un objeto del mundo real con existencia independiente. Se dibuja como un rectángulo.
+Atributo: Propiedad o característica de una entidad. Se representa con óvalos conectados a la entidad.
+Relación: Asociación entre entidades. Se dibuja como un rombo.
+Cardinalidad: Define la cantidad de instancias de una entidad que pueden relacionarse con otra.
+
+Coceptos:
+	Clave primaria: Garantiza la unicidad de cada registro en una tabla. No permite valores nulos.
+	Clave foranea: Campo en una tabla que referencia la clave primaria de otra tabla, asegurando integridad referencial.
+	Clave compuesta: Combinación de dos o más atributos que juntos identifican un registro de manera única.
+
+Tipos de datos en SQL
+R/ Numéricos:
+		INT: Entero (ej. 42).
+		FLOAT, DOUBLE: Números con decimales (ej. 3.14).
+		DECIMAL: Precisión fija para valores monetarios (ej. 123.45).
+Cadenas de texto:
+		CHAR(n): Longitud fija (ej. 'ABC').
+		VARCHAR(n): Longitud variable (ej. 'Hola').
+		TEXT: Texto largo.
+Fechas y horas:
+		DATE: Fecha (ej. '2023-05-09').
+		TIME: Hora (ej. '14:30:00').
+		DATETIME: Fecha y hora (ej. '2023-05-09 14:30:00').
+Booleanos:
+		BOOLEAN: Verdadero o falso.
+Otros:
+		BLOB: Datos binarios (ej. imágenes).
+		JSON: Datos en formato JSON.
+
+Las 3 formas normales de bases de datos
+R/ Primera Forma Normal (1NF):
+		Elimina grupos repetitivos.
+		Todos los atributos son atómicos (no divisibles).
+		Cada registro es único.
+Segunda Forma Normal (2NF):
+		Cumple 1NF.
+		Todos los atributos no clave dependen completamente de la clave primaria (elimina dependencias parciales).
+Tercera Forma Normal (3NF):
+		Cumple 2NF.
+		No hay dependencias transitivas (los atributos no clave no dependen de otros atributos no clave).
+
+
+09/05/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Tipos de datos en mysql, dando una explicación con sus propias palabras
+R/ INT: Almacena números enteros sin decimales, como 1, 100, -50.
+DECIMAL: Guarda números con decimales precisos, ideal para precios o medidas, como 19.99.
+VARCHAR: Almacena cadenas de texto de longitud variable, como nombres o descripciones.
+TEXT: Guarda grandes cantidades de texto, como párrafos o artículos.
+DATE: Almacena fechas en formato AAAA-MM-DD, como 2025-05-14.
+DATETIME: Guarda fecha y hora, como 2025-05-14 15:43:00.
+BLOB: Almacena datos binarios, como imágenes o archivos.
+BOOLEAN: Representa valores verdadero/falso, almacenado como 1 o 0.
+CHAR: Almacena cadenas de texto de longitud fija, como códigos de longitud constante.
+FLOAT: Guarda números de punto flotante para cálculos aproximados, como 3.14159.
+
+Listar los tipos de datos que va a usar mi proyecto
+R/ INT: Para IDs y números enteros como intentos (ej. 5).
+DECIMAL: Para puntajes o respuestas con decimales (ej. 4.5).
+VARCHAR: Para nombres, correos, preguntas cortas, videos o imágenes (ej. "Jerónimo").
+TEXT: Para retroalimentación o textos largos (ej. comentarios).
+DATE: Para fechas como registro (ej. 2025-05-14).
+DATETIME: Para fechas y horas exactas (ej. 2025-05-14 15:43:00).
+BOOLEAN: Para estados verdadero/falso (ej. ejercicio completado).
+CHAR: Para textos fijos como roles (ej. "estudiante").
+
+
+14/05/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Como insertar datos en una tabla en MySQL usando lenguaje SQL
+R/ Para insertar datos en una tabla en MySQL utilizando el lenguaje SQL, se emplea la sentencia INSERT INTO, que permite añadir registros a una tabla especificada. La sintaxis básica es la siguiente:
+INSERT INTO nombre_tabla (columna1, columna2, ..., columnaN)
+VALUES (valor1, valor2, ..., valorN);
+
+Insertar 4 grupos
+INSERT INTO grupo (id_grupo,nombre_grupo)
+VALUES (1,'Grupo A')
+R/ INSERT INTO grupo (id_grupo, nombre_grupo)
+VALUES 
+    (1, 'Grupo A'),
+    (2, 'Grupo B'),
+    (3, 'Grupo C'),
+    (4, 'Grupo D');
+
+Insertar 20 estudiantes (5 por grupo)
+INSERT INTO estudiante (id_estudiante,nombre,apellido,id_grupo)
+VALUES (1,'Ana','Martínez',1)
+R/ INSERT INTO estudiante (id_estudiante, nombre, apellido, id_grupo)
+VALUES 
+    -- Grupo A (id_grupo = 1)
+    (1, 'Sofía', 'Hernández', 1),
+    (2, 'Mateo', 'García', 1),
+    (3, 'Valentina', 'Flores', 1),
+    (4, 'Sebastián', 'Ruiz', 1),
+    (5, 'Juliana', 'Castillo', 1),
+
+    -- Grupo B (id_grupo = 2)
+    (6, 'Alejandro', 'Molina', 2),
+    (7, 'Isabella', 'Vargas', 2),
+    (8, 'Daniel', 'Romero', 2),
+    (9, 'Mariana', 'Soto', 2),
+    (10, 'Rafael', 'Guerrero', 2),
+
+    -- Grupo C (id_grupo = 3)
+    (11, 'Emmanuel', 'Navarro', 3),
+    (12, 'Lucas', 'Cabrera', 3),
+    (13, 'Paula', 'Ríos', 3),
+    (14, 'Martín', 'Campos', 3),
+    (15, 'Catalina', 'Delgado', 3),
+
+    -- Grupo D (id_grupo = 4)
+    (16, 'Joaquín', 'Peña', 4),
+    (17, 'Sara', 'Figueroa', 4),
+    (18, 'Emiliano', 'Ocampo', 4),
+    (19, 'Victoria', 'Bermúdez', 4),
+    (20, 'Benjamín', 'Salazar', 4);
+
+Insertar 6 salones
+INSERT INTO salon (id_salon,numero,ubicacion)
+VALUES (1,'A101','Edificio A - Primer Piso')
+R/ INSERT INTO salon (id_salon, numero, ubicacion)
+VALUES 
+    (1, 'A101', 'Edificio A - Primer Piso'),
+    (2, 'A102', 'Edificio A - Primer Piso'),
+    (3, 'B201', 'Edificio B - Segundo Piso'),
+    (4, 'B202', 'Edificio B - Segundo Piso'),
+    (5, 'C301', 'Edificio C - Tercer Piso'),
+    (6, 'C302', 'Edificio C - Tercer Piso');
+
+
+21/05/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+3 formas de inclusión de estilos en HTML
+R/ Estilos en línea: Se aplican directamente en el atributo style de un elemento HTML. Ejemplo: <p style="color: blue;">Texto</p>.
+
+Estilos internos: Se definen dentro de una etiqueta <style> en el <head> del documento HTML. Ejemplo: <style> p { color: blue; } </style>.
+
+Estilos externos: Se vinculan mediante un archivo CSS externo usando la etiqueta <link>. Ejemplo: <link rel="stylesheet" href="estilos.css">.
+
+Que son direcciones relativas de archivos y como funcionan cuando se incluye una imagen o cualquier otro archivo al HTML
+R/ Las direcciones relativas especifican la ubicación de un archivo (como una imagen) respecto a la ubicación del archivo HTML. Se usan rutas como ./ (directorio actual), ../ (directorio superior) o nombres de carpetas. Por ejemplo, <img src="../imagenes/foto.jpg"> indica una imagen en la carpeta "imagenes" ubicada un nivel arriba del archivo HTML. Funcionan resolviendo la ruta desde la posición del archivo HTML, permitiendo flexibilidad en la estructura de directorios.
+
+Buscar que son elementos en bloque (block) y elementos en linea (inline) en HTML
+R/ Elementos en bloque: Ocupan todo el ancho disponible, comenzando en una nueva línea (ejemplo: <div>, <p>, <h1>). Forman un "bloque" visual, apilándose verticalmente.
+
+Elementos en línea: Ocupan solo el espacio necesario y no generan saltos de línea (ejemplo: <span>, <a>, <img>). Se alinean horizontalmente dentro de un bloque contenedor.
+
+
+28/05/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+Consultar que es el modelo de caja en CSS (BOXMODEL)
+R/ El modelo de caja en CSS (Box Model) define cada elemento como una caja rectangular con cuatro partes: contenido, relleno (padding), borde (border) y margen (margin). El contenido muestra el elemento, el relleno es el espacio interno, el borde lo rodea y el margen es el espacio externo. Estas propiedades controlan el tamaño y disposición de los elementos en una página web.
+
+¿Qué sistemas de medida se usan en CSS?
+R/ En CSS, las unidades de medida se clasifican en absolutas y relativas. Las absolutas, como px, cm, mm, in, pt y pc, tienen un tamaño fijo y se usan en contextos que requieren precisión, como impresiones.
+
+Las unidades relativas, como %, em, rem, vw, vh, vmin, vmax y ch, dependen del contexto, como el tamaño de fuente o la ventana del navegador, siendo ideales para diseños responsivos.
+
+
+06/06/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+¿Qué es diseño responsivo?
+R/ El diseño responsivo es un enfoque de desarrollo web que busca crear páginas y aplicaciones capaces de adaptar su presentación y funcionalidad a diferentes tamaños de pantalla y dispositivos. Su objetivo es garantizar una experiencia de usuario óptima, independientemente de si se accede desde un ordenador de escritorio, una tableta o un teléfono móvil.
+
+¿Qué es un grid en diseño responsivo?
+R/ Un sistema de grid en el diseño responsivo es una estructura de columnas y filas que se utiliza para organizar y alinear el contenido de una página. Permite que el diseño sea flexible y escalable, ajustando automáticamente el ancho de las columnas y la disposición de los elementos para adaptarse al tamaño de la ventana de visualización.
+
+¿Qué dispositivos se deben de tener en cuenta en diseño responsivo?
+R/ Se deben tener en cuenta una amplia gama de dispositivos, como:
+
+Móviles: Teléfonos inteligentes con pantallas pequeñas.
+
+Tabletas: Dispositivos de tamaño intermedio.
+
+Escritorio: Ordenadores con pantallas grandes, incluyendo laptops y monitores.
+
+La práctica moderna se centra en los puntos de quiebre (breakpoints) del contenido, más que en los dispositivos específicos, para asegurar una adaptabilidad fluida.
+
+¿Aplica el diseño responsivo según el navegador?
+R/ El diseño responsivo se implementa mediante estándares web como HTML y CSS, que son interpretados de manera consistente por la mayoría de los navegadores modernos. Aunque las diferencias de interpretación pueden existir, el concepto fundamental del diseño responsivo aplica a través de todos los navegadores principales.
+
+¿Qué es FlexBox en diseño responsivo?
+R/ Flexbox (o Flexible Box Layout) es un módulo de diseño unidimensional de CSS que permite organizar y distribuir elementos dentro de un contenedor. Está optimizado para alinear, ordenar y distribuir espacios entre elementos, facilitando la creación de diseños complejos y adaptables que se ajustan dinámicamente al tamaño de la pantalla a lo largo de un solo eje (fila o columna).
+
+
+11/07/2025
+
+______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+
+¿Que es un framework CSS en diseño web?
+R/ Un framework CSS en diseño web es una biblioteca preescrita de hojas de estilo en cascada (CSS) que proporciona un conjunto de plantillas, componentes, y reglas de diseño predefinidas. Su objetivo es acelerar el desarrollo web al ofrecer una base sólida y consistente para el estilo visual de un sitio, promoviendo la reutilización de código y la creación de interfaces responsivas.
+
+¿Que es Bootstrap en diseño web?
+R/ Bootstrap es un framework CSS y JavaScript de código abierto, desarrollado inicialmente por Twitter. Se distingue por su enfoque "mobile-first" y por ofrecer una amplia colección de componentes reutilizables como sistemas de rejilla (grid systems), barras de navegación, botones, formularios, y modales. Su popularidad radica en su facilidad de uso, su extensa documentación y su capacidad para crear diseños adaptables a diferentes dispositivos.
+
+Identificar 2 sitios hechos con Bootstrap, listarlos e inspeccionar la linea de código donde es claro que estos sitios usan Bootstrap.
+R/ 1. https://www.lego.com/en-us
+:root {				bootstrap.min.css:6			
+    --eswIconFillColor: #FFF;
+    --eswIconFontSize: 16px;
+    --eswButtonBottom: 25px;
+    --eswButtonRight: 30px;
+}
+
+2. https://ielasnieves.edu.co/
+.navbar-nav {			bootstrap.css:3817
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 0.5rem;
+    --bs-nav-link-font-weight: ;
+    --bs-nav-link-color: var(--bs-navbar-color);
+    --bs-nav-link-hover-color: var(--bs-navbar-hover-color);
+    --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color);
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+
+30/07/2025
