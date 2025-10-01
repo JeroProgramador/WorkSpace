@@ -1,0 +1,22 @@
+1. Manejo de variables en JavaScript
+https://www.youtube.com/watch?v=YFCERxaqNuM
+
+
+2. Cómo funciona el IF en JavaScript
+https://www.youtube.com/watch?v=lVt8SMmS2SY
+
+
+3. Cómo funciona el WHILE en JavaScript
+https://www.youtube.com/watch?v=6vl2i2Woqqs
+
+
+4. Cómo funciona el FOR en JavaScript
+https://www.youtube.com/watch?v=sm6r1PuKgTE
+
+
+5. Como seleccionar elementos en JavaScript
+https://www.youtube.com/watch?v=Qps9i6OrD4U
+
+
+6. Como modificar elementos en JavaScript
+https://www.youtube.com/watch?v=dr8rsHjl0Cc&t
